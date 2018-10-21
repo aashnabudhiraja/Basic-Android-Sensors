@@ -14,6 +14,7 @@ public class Home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         accelerometer();
+        gps();
         gyroscope();
         light();
         magnetic();
@@ -80,6 +81,19 @@ public class Home extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent(Home.this, Proximity.class);
+                        startActivity(intent);
+                    }
+                }
+        );
+    }
+
+    public void gps() {
+        Button gpsButton = (Button)findViewById(R.id.gps_button);
+        gpsButton.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(Home.this, GPS.class);
                         startActivity(intent);
                     }
                 }

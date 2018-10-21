@@ -24,9 +24,9 @@ public class Gyrosc extends AppCompatActivity implements SensorEventListener {
 
         SM.registerListener(this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
 
-        gyrosc_xText = (TextView)findViewById(R.id.gyrosc_x_textview);
-        gyrosc_yText = (TextView)findViewById(R.id.gyrosc_y_textview);
-        gyrosc_zText = (TextView)findViewById(R.id.gyrosc_z_textview);
+        gyrosc_xText = (TextView)findViewById(R.id.accel_x_textview);
+        gyrosc_yText = (TextView)findViewById(R.id.accel_y_textview);
+        gyrosc_zText = (TextView)findViewById(R.id.accel_z_textview);
     }
 
     @Override
